@@ -1,0 +1,93 @@
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+
+/* shared style */
+.display-flax{
+    display: flex;
+}
+/* drak1 */
+.drak-color{
+    color: #424242;
+}
+/* drak2 */
+.drak1-color{
+    color: #131313;
+}
+/* drak light */
+.drak-light-color{
+    color: #727277;
+}
+.btn{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    padding: 18px 39px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* header style */
+.bg-color{
+    background-color: #f6f6f6e4;
+}
+
+/* nav style */
+.navber {
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.brand{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.navber, .banner{
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner-contant */
+.banner-contant{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+/* media con */
+@media screen and (max-width: 570px) {
+    .nav-links, .navber{
+        flex-direction: column;
+    }
+    
+}
