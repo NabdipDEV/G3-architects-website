@@ -136,6 +136,47 @@ main{
 #title-1{
     font-weight: 500;
 }
+/* Feature Section Css  */
+
+.feature{
+    gap: 100px;
+}
+#feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.117);
+    margin-bottom: 20px;
+}
+.feature-card .feature-card-title{
+    font-size:  1.2rem;
+    font-weight: 600; 
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.architect-img{
+    max-width: 520px;
+    height: 90%;
+    border-radius: 8px;   
+}
+#btn-bdge{
+    padding: 45px 42px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: -70px;
+    margin-top: -90px;
+}
+#btn-year{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+
+
 
 
   /* <!--Facts section --> */
@@ -196,7 +237,11 @@ main{
 
 
 @media screen and (max-width: 570px) {
-    .nav-links, .navber, .team{
+    .nav-links,
+     
+    .navber, 
+    .team,
+    .feature{
         flex-direction: column;
     }
     .banner-title{
@@ -210,16 +255,33 @@ main{
     .our-plan{
     margin-left: 20px;
     }
+    .architect-img{
+    width: 100%;
+    }
+     #btn-bdge{
+        display: block;
+        margin: 30px auto;
+    }
+   
 }
-
 
 /* meduim div */
 
 
 @media screen and (min-width: 570px) and (max-width: 992px) {
-    .team{
+    .team, .feature{
         flex-direction: column;
     }
+     .architect-img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+     #btn-bdge{
+        display: block;
+        margin: 30px auto;
+    }
+   
     .facts-container,
     .sponsor-company{
     grid-template-columns: repeat(2, 1fr);
@@ -236,6 +298,14 @@ main{
     .team{
         flex-direction: column;
     }
+    .architect-img{
+        height: auto;
+    }
+     #btn-bdge{
+        display: block;
+        margin: 100px auto;
+    }
+
     .facts-container,
     .sponsor-company{
     grid-template-columns: repeat(2, 1fr);
