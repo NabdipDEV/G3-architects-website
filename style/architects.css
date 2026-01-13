@@ -143,12 +143,13 @@ main{
   .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+    justify-items: center;
+    gap: 10px;
   }
 
   .card{
     border: 1px solid #FF900E;
-    border-radius: 8px ;
+    border-radius: 8px;
     width: 240px;
     height: 240px;
     text-align: center;
@@ -167,13 +168,29 @@ main{
     margin-top: 10px;
     margin-bottom: 0;
 
-    
   }
 
   .facts-description{
     max-width: 540px;
   }
 
+
+  /* sponsor releted css */
+  .sponsors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+ .sponsor-company img {
+    filter: grayscale(100%);
+    
+ }
 
 /* media con */
 
@@ -182,7 +199,12 @@ main{
     .nav-links, .navber, .team{
         flex-direction: column;
     }
-    .team-img{
+    .banner-title{
+    font-size: 3rem;
+    }
+    .team-img,
+    .facts-container,
+    .sponsor-company{
     grid-template-columns: repeat(1, 1fr);
     }
     .our-plan{
@@ -198,6 +220,10 @@ main{
     .team{
         flex-direction: column;
     }
+    .facts-container,
+    .sponsor-company{
+    grid-template-columns: repeat(2, 1fr);
+    }
     .our-plan{
     margin-left: 50px;
     }
@@ -209,6 +235,10 @@ main{
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .team{
         flex-direction: column;
+    }
+    .facts-container,
+    .sponsor-company{
+    grid-template-columns: repeat(2, 1fr);
     }
     .our-plan{
     margin-left: 50px;
